@@ -8,34 +8,35 @@
 </head>
 <body>
     <main class="page-shell">
-        <section class="hero-card">
-            <div class="hero-copy">
-                <h1>Hello, Welcome to Siemens</h1>
-                <p class="intro">
-                    Scan the QR code for the password, then open the presentation materials below.
-                </p>
-            </div>
+        <section class="layout-grid" aria-label="Onboarding presentation and welcome message">
+            <article class="hero-card">
+                <div class="hero-copy">
+                    <p class="eyebrow">Onboarding</p>
+                    <h1>Hello, Welcome to Siemens</h1>
+                    <p class="intro">
+                        Scan the QR code for the password, then review the presentation on the right.
+                    </p>
+                </div>
 
-            <div class="qr-card" aria-label="QR code for password access">
-                <img src="assets/password-qr.png" alt="QR code for the password">
-                <p>Scan for the password</p>
-            </div>
-        </section>
+                <div class="qr-card" aria-label="QR code for password access">
+                    <img src="assets/password-qr.png" alt="QR code for the password">
+                    <p>Scan for the password</p>
+                </div>
+            </article>
 
-        <section class="content-grid" aria-label="Presentation files">
-            <article class="content-card">
+            <article class="presentation-card" aria-label="Presentation preview">
                 <div class="section-heading">
                     <p class="eyebrow">Presentation</p>
-                    <h2>Open the deck</h2>
+                    <h2>Onboarding @ GSW</h2>
                 </div>
-                <ul class="resource-list">
-                    <li>
-                        <a class="resource-link" href="assets/Onboarding%20@%20GSW.pptx" download>
-                            <span>Onboarding @ GSW</span>
-                            <small>PPTX</small>
-                        </a>
-                    </li>
-                </ul>
+
+                <div class="presentation-frame">
+                    <iframe
+                        class="presentation-embed"
+                        src="assets/Onboarding%20@%20GSW.pdf"
+                        title="Onboarding @ GSW presentation"
+                    ></iframe>
+                </div>
             </article>
         </section>
     </main>
